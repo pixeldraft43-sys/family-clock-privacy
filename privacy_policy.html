@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Family Clock</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #1e293b; max-width: 800px; margin: 0 auto; padding: 24px; background-color: #f8fafc; }
+        h1, h2, h3 { color: #0f172a; }
+        h1 { border-bottom: 2px solid #e2e8f0; padding-bottom: 12px; }
+        .placeholder { background-color: #fef08a; padding: 2px 6px; border-radius: 4px; font-weight: bold; }
+        .card { background: white; border-radius: 12px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); margin-bottom: 24px; }
+        footer { margin-top: 40px; border-top: 1px solid #e2e8f0; padding-top: 16px; font-size: 0.9em; color: #64748b; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Privacy Policy for Family Clock</h1>
+        <p><strong>Application Name:</strong> Family Clock / Alarm Share</p>
+        <p><strong>Package Name:</strong> <code>com.alarmshare.family</code></p>
+        <p><strong>Developer Legal Name:</strong> <span class="placeholder">[DEVELOPER LEGAL NAME]</span></p>
+        <p><strong>Privacy Contact Email:</strong> <span class="placeholder">[pixeldraft43@gmail.com]</span></p>
+        <p><strong>Effective Date:</strong> May 2024</p>
+    </div>
+
+    <div class="card">
+        <h2>1. Overview</h2>
+        <p>Family Clock is designed to assist family members in setting personal alarms, synchronizing shared family alarms, managing timers, and running stopwatches. This Privacy Policy describes how data is handled locally on your device and via connected third-party services.</p>
+    </div>
+
+    <div class="card">
+        <h2>2. Data Stored Locally on Device</h2>
+        <ul>
+            <li><strong>Personal Alarms:</strong> Time, labels, repeat schedules, ringtones, and volume settings are stored locally in an encrypted SQLite Room database on your physical device.</li>
+            <li><strong>Application Settings & Preferences:</strong> Theme preference, snooze length, dismissal methods, and local family member display choices are stored locally via Android SharedPreferences.</li>
+            <li><strong>Timer & Stopwatch State:</strong> Active timer countdowns and stopwatch lap times operate strictly on-device.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>3. Cloud Data (Google Firebase Services)</h2>
+        <ul>
+            <li><strong>Anonymous Firebase Authentication:</strong> The application uses Firebase Anonymous Authentication to assign a random User Identifier (UID) for family session security. No email, password, or phone number is collected for basic account creation.</li>
+            <li><strong>Firestore Shared Alarms:</strong> Shared alarm configurations (time, label, repeat days, target family relation, version counter, and member UIDs) are stored in Cloud Firestore to enable real-time synchronization between connected devices. Access is restricted by Firestore Security Rules to authorized member UIDs.</li>
+            <li><strong>Temporary Pairing Codes:</strong> 6-digit invitation codes are generated in Cloud Firestore for linking family devices. Pairing codes are short-lived, single-use, and expire automatically.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>4. Advertising & Consent (Google Mobile Ads / AdMob)</h2>
+        <p>For non-paying users, non-critical banner ads and optional rewarded ads (used for unlocking temporary family capacity) are served via Google Mobile Ads SDK (AdMob).</p>
+        <ul>
+            <li><strong>Processed Data:</strong> Device Advertising ID (AAID), IP address, and app diagnostics for ad serving, frequency capping, and fraud prevention.</li>
+            <li><strong>User Consent (UMP SDK):</strong> Google User Messaging Platform (UMP) SDK handles privacy choice selection for applicable distribution regions (EEA / UK). Users can update consent preferences in App Settings.</li>
+            <li><strong>Paid Subscribers:</strong> Active paid subscription entitlements disable normal banner advertising.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>5. In-App Subscriptions (Google Play Billing)</h2>
+        <p>Subscriptions (<code>family_6</code>, <code>family_8</code>, <code>family_10</code>) expand maximum family capacity. All financial transactions are processed directly by the Google Play Billing API. The application does <strong>not</strong> collect or store credit card, CVV, bank, or UPI payment credentials.</p>
+    </div>
+
+    <div class="card">
+        <h2>6. Data Retention & Deletion</h2>
+        <ul>
+            <li><strong>Local Data:</strong> Retained on device until deleted by the user or when the application is uninstalled.</li>
+            <li><strong>Shared Alarm Data:</strong> Retained in Cloud Firestore while active and accessible to shared members.</li>
+            <li><strong>Account & Data Deletion:</strong> Users can trigger <strong>"Delete account & data"</strong> inside App Settings to wipe local alarms, delete user profile documents (<code>users/{uid}</code>), remove membership from shared alarms, and delete the Firebase Auth user session.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>7. Children's Privacy</h2>
+        <p>Family Clock is intended for household coordination. We do not knowingly collect personal information from children under 13. If you believe child data has been inadvertently provided, contact us to request data removal.</p>
+    </div>
+
+    <div class="card">
+        <h2>8. Contact & Privacy Inquiries</h2>
+        <p>To request data deletion or ask privacy questions, contact:</p>
+        <p><strong>Email:</strong> <span class="placeholder">[PRIVACY CONTACT EMAIL]</span></p>
+    </div>
+
+    <footer>
+        <p>&copy; Family Clock. All rights reserved.</p>
+    </footer>
+</body>
+</html>
