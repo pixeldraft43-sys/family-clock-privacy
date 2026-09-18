@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account & Data Deletion - Family Clock</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #1e293b; max-width: 800px; margin: 0 auto; padding: 24px; background-color: #f8fafc; }
+        h1, h2 { color: #0f172a; }
+        h1 { border-bottom: 2px solid #e2e8f0; padding-bottom: 12px; }
+        .placeholder { background-color: #fef08a; padding: 2px 6px; border-radius: 4px; font-weight: bold; }
+        .card { background: white; border-radius: 12px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); margin-bottom: 24px; }
+        .warning { background-color: #fef2f2; border-left: 4px solid #ef4444; padding: 12px 16px; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Account & Data Deletion Request</h1>
+        <p><strong>App Name:</strong> Family Clock / Alarm Share</p>
+        <p><strong>Package Name:</strong> <code>com.alarmshare.family</code></p>
+        <p><strong>Developer Legal Name:</strong> <span class="placeholder">[DEVELOPER LEGAL NAME]</span></p>
+        <p><strong>Privacy Contact Email:</strong> <span class="placeholder">[PRIVACY CONTACT EMAIL]</span></p>
+    </div>
+
+    <div class="card">
+        <h2>How to Delete Your Data In-App (Recommended)</h2>
+        <p>You can delete your data immediately inside the Family Clock application:</p>
+        <ol>
+            <li>Open <strong>Family Clock</strong> on your Android device.</li>
+            <li>Go to <strong>Settings</strong>.</li>
+            <li>Scroll down to <strong>PRIVACY & DATA</strong>.</li>
+            <li>Tap <strong>Delete account & data</strong>.</li>
+            <li>Confirm deletion on the pop-up warning dialog.</li>
+        </ol>
+        <div class="warning">
+            <p><strong>Warning:</strong> In-app deletion permanently removes your local personal alarms, app preferences, user document (<code>users/{uid}</code>), removes your membership from shared family alarms, and deletes your Firebase user session.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>How to Request Manual Web Deletion</h2>
+        <p>If you no longer have access to the Android application, you may request manual data deletion by contacting our privacy team:</p>
+        <p><strong>Send an Email to:</strong> <span class="placeholder">[PRIVACY CONTACT EMAIL]</span></p>
+        <p><strong>Subject:</strong> Family Clock Data Deletion Request</p>
+        <p><strong>Required Information:</strong></p>
+        <ul>
+            <li>Your Anonymous Firebase User ID (if known from App Settings > About).</li>
+            <li>Pairing Code or Shared Alarm Label associated with your family group (to assist in identifying orphaned cloud entries).</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Data Retention & Processing After Deletion Request</h2>
+        <ul>
+            <li><strong>Deleted Immediately:</strong> Local device database, local settings, user document (<code>users/{uid}</code>), and active pairing codes.</li>
+            <li><strong>Preserved for Other Members:</strong> Shared family alarms created by other household members will remain active for remaining members, but your user ID is removed from membership.</li>
+            <li><strong>Third-Party Financial Logs:</strong> Subscriptions processed via Google Play Billing may retain anonymized transaction records in Google Play Console for legal, tax, and audit compliance required by Google Play Policies.</li>
+        </ul>
+    </div>
+</body>
+</html>
